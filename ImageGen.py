@@ -18,7 +18,8 @@ def fetch_image(url):
 # prompt = 'A beautiful landscape'
 width = 1024
 height = 1024
-# seed = 42 # Each seed generates a new image variation
+
+# Each seed generates a new image variation
 seed = random.randint(0, 100)
 model = 'flux' # Using 'flux' as default if model is not provided
 
@@ -45,7 +46,6 @@ if st.button("Generate Image"):
     
     elapsed_time = time.time() - start_time
     timer_placeholder.write(f"Total time taken: {elapsed_time:.2f} seconds")
-    # st.image(image, caption="Generated Image", use_column_width=True)
     st.image(image, caption="Generated Image", use_container_width=True)
 
 
