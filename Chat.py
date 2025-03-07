@@ -3,7 +3,7 @@ from google import genai
 import PIL.Image
 
 # Set up Gemini API client (Replace with your actual API key)
-client = genai.Client(api_key="st.secrets["GOOGLE_API_KEY"]")
+client = genai.Client(api_key=st.secrets["GOOGLE_API_KEY"])
 
 # Streamlit App UI
 st.subheader("Chatbot with Image Analysis 🔍")
