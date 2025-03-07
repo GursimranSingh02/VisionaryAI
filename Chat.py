@@ -1,43 +1,10 @@
-# from google import genai
-# import streamlit as st
-# import PIL.Image
-
-# client = genai.Client(api_key="AIzaSyDvS7kknQuBamM_jDKyGFvIZr1JUDKPk6w")
-
-
-
-# image1 = PIL.Image.open('D:\VS Code Programs\Python\Image_Encryption\EasterIsland.jpg')
-# image2 = PIL.Image.open('D:\VS Code Programs\Python\Image_Encryption\GSKDecrypt.jpg')
-
-# # client = genai.Client(api_key="GEMINI_API_KEY")
-# response = client.models.generate_content(
-#     model="gemini-2.0-flash",
-#     contents=["Describe both the images?", image1, image2])
-#     # contents=["hey?"])
-
-# print(response.text)
-# print(genai.__version__)
-
-
-
-
-
-
-
-
-
-
-
-
 import streamlit as st
 from google import genai
 import PIL.Image
 
-
-
 # Set up Gemini API client (Replace with your actual API key)
-client = genai.Client(api_key="AIzaSyDvS7kknQuBamM_jDKyGFvIZr1JUDKPk6w")
-# client = genai.Client(api_key="st.secrets["GOOGLE_API_KEY"]")
+
+client = genai.Client(api_key="st.secrets["GOOGLE_API_KEY"]")
 
 # Streamlit App UI
 st.subheader("Chatbot with Image Analysis 🔍")
