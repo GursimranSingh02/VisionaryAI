@@ -18,10 +18,6 @@ uploaded_files = st.file_uploader("Upload up to 5 images", type=["jpg", "png", "
 # Display uploaded images
 images = []
 if uploaded_files:
-    # for file in uploaded_files[:5]:  # Limit to 5 images
-    #     img = PIL.Image.open(file)
-    #     images.append(img)
-    #     st.image(file, use_container_width=True)
     if len(uploaded_files) > 5:
         st.warning("You can only upload up to 5 images.")
     else:
@@ -46,7 +42,7 @@ if st.button("Get Response"):
 
         # Display API Response
         if response and response.text:
-            st.subheader("Gemini's Response:")
+            st.subheader("Response:")
             st.write(response.text)
         else:
             st.error("Failed to get a response from Gemini API.")
