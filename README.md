@@ -32,11 +32,3 @@ To install and set up VisionaryAI locally, follow these steps:
     ```bash
     pip install -r requirements.txt
     ```
-
-
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
-## Contact
-
-For questions or support, please contact [Gursimran Singh](https://github.com/GursimranSingh02).
