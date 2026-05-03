@@ -33,6 +33,10 @@ To install and set up VisionaryAI locally, follow these steps:
     pip install -r requirements.txt
     ```
 
+4. Start the server
+    ```bash
+    streamlit run main.py
+    ```
 
 ## Working Project
 
